@@ -15,7 +15,7 @@ const authlog = getAuth();
 const storage = getStorage();
 const db = getFirestore();
 
- //icon
+ //icon 
  import { MdUpload } from 'react-icons/md';
 
 
