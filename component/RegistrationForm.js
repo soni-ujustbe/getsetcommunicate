@@ -17,7 +17,7 @@ import walogo from '../public/images/whatsapp.png'
 
 
 const threecheckdata = [
-    { name: "Contributor" },
+    { name: "Explorer" },
     { name: "Selfless" },
     { name: "Integrity" },
     { name: "Authenticity" },   
@@ -567,7 +567,7 @@ useEffect(() => {
 
                          {/* 5th question */}
                          <div className="form-row radio-buttons">
-                            <h2>5. As a Listed Partner, which one of which one of the below reasons that you see for yourself to be with UJustBe??<sup>*</sup> </h2>
+                            <h2>5. As a Listed Partner, which one of the below reasons that you see for yourself to be with UJustBe??<sup>*</sup> </h2>
                             <ul>
 
                                     <li>
@@ -630,7 +630,7 @@ useEffect(() => {
 
                         {/* 6th question */}
                         <div className="form-row radio-buttons">
-                            <h2>6. Which one of the below ways you can contribute as a Partner?<sup>*</sup>  </h2>
+                            <h2>6. Which of these below ways you can contribute as a Partner?<sup>*</sup>  </h2>
                             <ul>
 
                                 <li>
