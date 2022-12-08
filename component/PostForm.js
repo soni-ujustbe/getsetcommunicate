@@ -13,10 +13,10 @@ const db = getFirestore();
 import topbannerimg from '../public/images/topbanner.png';
 
 const threecheckdata = [
-    { name: "Ask other to pass the referrals" },
-    { name: "Meet/Speak with other Partners and Listed Partner to build connection and know about them" },
-    { name: "Attend monthly and value meetings only if you do not have any other commitment" },
-    { name: "Wait for someone to tell about their requirements to identify it as a referral" },   
+    { name: "Proactive: You initiate the communication with the other Partners and Listed Partners" },
+    { name: "Reactive: You wait for other Partner or Listed Partner to initiate communication with you" },
+    { name: "Contextual: You connect with another Partner or Listed Partner either Proactively or Reactively based on the situation" },
+    { name: "Being Silent Observer: You just listen and take no action" },   
     { name: "None of the above" },   
       
 ];
@@ -324,7 +324,7 @@ const PostForm = () => {
 
                                 {/* 1st question */}
                         <div className="form-row radio-buttons">
-                            <h2>1. Do you think that it is right time to start the in-person Monthly Meetings?<sup>*</sup></h2>
+                            <h2>1. Do you think that there is two-way communication happening in the Monthly Meetings?<sup>*</sup></h2>
                             <ul>
 
                                 <li>
@@ -377,7 +377,7 @@ const PostForm = () => {
 
                         {/* 2nd question */}
                         <div className="form-row radio-buttons">
-                            <h2>2. Do you like to see Nucleus Team members driving and conducting the Monthly Meeting?<sup>*</sup></h2>
+                            <h2>2. Do you like the way UJusBe Core and Nucleus teams communicate in the Monthly Meeting?<sup>*</sup></h2>
 
                             <ul>
                             <li>
@@ -418,7 +418,7 @@ const PostForm = () => {
 
                         {/* 3nd question */}
                         <div className="form-row radio-buttons">
-                            <h2>3. As an Explorer Partner, which of the below actions you shall take?<sup>*</sup> </h2>
+                            <h2>3. As an Explorer Partner, which of the below types of communication you shall do?<sup>*</sup> </h2>
                             <ul>
 
                                 <li >
@@ -450,7 +450,7 @@ const PostForm = () => {
 
                         {/* 4th question */}
                         <div className="form-row radio-buttons">
-                                <h2>4. Do you think that you can explore and grow in UJustBe independently, all by your own efforts?  <sup>*</sup></h2>
+                                <h2>4. Do you think that you can explore and grow in UJustBe without any communication? <sup>*</sup></h2>
                                 <ul>
 
                                     <li>
@@ -485,7 +485,7 @@ const PostForm = () => {
                                              id="fourInput"
                                             value={fourQuestionInput}
                                             name="questionFour"
-                                            placeholder='then name few names or categories'
+                                            placeholder='then share How'
                                             required
                                             onChange={(event) => {
                                                 setFourQuestionInput(event.target.value)
@@ -502,32 +502,32 @@ const PostForm = () => {
 
                          {/* 5th question */}
                          <div className="form-row radio-buttons">
-                                <h2>5. Do you check UjustBe App first if you have your own your requirements?<sup>*</sup></h2>
+                                <h2>5. Which of the below 2 ways, you think is the best way to communicate your requirements?<sup>*</sup></h2>
                                 <ul>
 
                                     <li>
                                         <label htmlFor="5A">
                                             <input
                                                 id="5A"
-                                                value="Yes"
+                                                value="UJustBe App"
                                                 name="questionFive"
                                                 type="radio"
                                                 onChange={questionFive}
-                                                checked={fivecheck == 'Yes'} />
+                                                checked={fivecheck == 'UJustBe App'} />
                                             <div className='custom_radio'></div>
-                                            Yes</label>
+                                            UJustBe App</label>
                                     </li>
                                     <li>
                                         <label htmlFor="5B">
                                             <input
                                                 id="5B"
-                                                value="No"
+                                                value="WhatsApp"
                                                 name="questionFive"
                                                 type="radio"
                                                 onChange={questionFive}
-                                                checked={fivecheck == 'No'} />
+                                                checked={fivecheck == 'WhatsApp'} />
                                             <div className='custom_radio'></div>
-                                            No</label>
+                                            WhatsApp</label>
                                     </li>
 
                                 </ul>
@@ -538,7 +538,7 @@ const PostForm = () => {
 
                         {/* 6th question */}
                         <div className="form-row radio-buttons">
-                            <h2>6. Will you accept help from Nucleus to develop your personality, if offered?  <sup>*</sup>  </h2>
+                            <h2>6. Will you accept help from Nucleus Team to explore ways to enhance your communication, if offered? <sup>*</sup>  </h2>
                             <ul>
 
                                 <li>
